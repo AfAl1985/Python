@@ -27,9 +27,11 @@ deptors = int(input("Enter a number of deptors: "))
 deptor_number = 0
 summ = 0
 
-for n in range(deptor_number, deptors, +5):
-    deptor_number += n
+for n in range(0, deptors, 5):
     print("The number of a deptor: ", deptor_number)
     result = int(input("How much do you owe?: "))
     summ = summ + result
+    deptor_number += 5
+    if deptor_number > deptors:
+        deptor_number = deptors
 print(summ)
