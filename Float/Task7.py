@@ -13,6 +13,6 @@ print("Задача 7. За что?")
 
 first = int(input("Enter the first number: "))
 second = int(input("Enter the second number: "))
-comparison = max(first, second)
 
-print(comparison)
+max = (first + second + abs(first - second))/2
+print(max)
