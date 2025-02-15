@@ -1,6 +1,5 @@
 import math
 
-
 def func(x):
     if - 5 <= x <= 5:
         print('x =', x, 'y =', math.exp(x))

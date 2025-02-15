@@ -15,3 +15,17 @@ print("Задача 4. Число наоборот")
 # Введите число: 1230
 # Число наоборот: 321
 # Ноль, который мы убрали, называется ведущим.
+# noinspection PyTypeChecker
+def reverse():
+    rev= 0
+    number = int(input("Enter the number: "))
+    while number != 0:
+        digit = number % 10
+        rev = rev * 10 + digit
+        number //= 10
+        print(rev)
+reverse()
+
+
+
+
