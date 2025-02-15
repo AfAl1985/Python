@@ -12,3 +12,22 @@ print("Задача 5. Текстовый редактор")
 # Какую букву ищем? Л
 # Количество цифр 0: 2
 # Количество букв Л: 1
+
+def count_letters(string):
+    count_letter = 0
+    count_digit = 0
+    letter = input("Which letter are we looking for: ")
+    digit = input("Which digit are we looking for: ")
+    for i in string:
+        if i == letter:
+            count_letter += 1
+        elif i == digit:
+            count_digit += 1
+    print(count_letter)
+    print(count_digit)
+
+string = input('Enter any sentence: ')
+count_letters(string)
+
+
+
