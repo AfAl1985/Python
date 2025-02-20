@@ -5,11 +5,12 @@ print("Задача 1. Сумма чисел")
 # Пример работы программы:
 # Введите число: 5
 # Я знаю, что сумма чисел от 1 до 5 равна 15
-def summa_n(res):
+def summa_n(num):
     res = 0
 
     num = int(input("Enter any positive number: "))
     for i in range(1, num +1):
         res += i
     print(res)
-summa_n(res= '')
+summa_n(num='')
+

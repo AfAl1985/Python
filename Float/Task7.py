@@ -14,6 +14,8 @@ print("Задача 7. За что?")
 first = int(input("Enter the first number: "))
 second = int(input("Enter the second number: "))
 
+
+
 max = (first + second + abs(first - second))/2
 max2 = (first + second + (first**2)**(1/2))/2
 print(max)
