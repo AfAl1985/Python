@@ -13,25 +13,25 @@ print("Задача 5. Маятник")
 # Введите начальную амплитуду: 1
 # Введите амплитуду остановки: 0.1
 # Маятник считается остановившимся через 27 колебаний
-def Amplitude(start_amp, stop_amp):
+def amplitude(start_amp, stop_amp):
     count = 0
     while start_amp >= stop_amp:
         start_amp -= start_amp / 100 * 8.4
         count += 1
     return  count
 
-def Check(start_amp, stop_amp):
+def check(start_amp, stop_amp):
     if start_amp < stop_amp:
         print('Error')
-        Start()
+        start()
     else:
-        pendulum_stop = Amplitude(start_amp, stop_amp)
+        pendulum_stop = amplitude(start_amp, stop_amp)
         return pendulum_stop
 
-def Start():
+def start():
     start_amp = int(input("Enter initial amplitude: "))
     stop_amp = float(input("Enter stop point: "))
-    answer = Check(start_amp, stop_amp)
+    answer = check(start_amp, stop_amp)
     print(answer)
 
-Start()
+start()
