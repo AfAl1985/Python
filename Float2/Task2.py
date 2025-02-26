@@ -22,7 +22,7 @@ first = int(input("Enter the first number: "))
 second = int(input("Enter the second number: "))
 maxsimum_of_two(first, second)
 
-def maximum_of_two(third):
+def maximum_of_two(first, second, third):
     max2 = third
     if max2 < first:
         max2 = first
@@ -31,4 +31,4 @@ def maximum_of_two(third):
     print(max2)
 
 third = int(input("Enter the third number: "))
-maximum_of_two(third)
+maximum_of_two(first, second, third)

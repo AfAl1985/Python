@@ -11,15 +11,18 @@ print("Задача 1. Урок информатики 2")
 # Пример 2:
 # Введите число: 0.0012
 # Формат плавающей точки: x = 1.2 * 10 ** -3
+def lesson(number):
 
+    a = 0
+    if number < 1:
+        while number < 1:
+            number *= 10
+            a -= 1
+    elif number >= 10:
+        while number >= 10:
+            number /= 10
+            a += 1
+    print("format: x =",round(number, 1),"* 10 **", a)
 number = (float(input("Enter the number: ")))
-a = 0
-if number < 1:
-    while number < 1:
-        number *= 10
-        a -= 1
-elif number >= 10:
-    while number >= 10:
-        number /= 10
-        a += 1
-print("format: x =",round(number, 1),"* 10 **", a)
+
+lesson(number)
